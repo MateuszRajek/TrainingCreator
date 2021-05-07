@@ -1,3 +1,4 @@
+import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Dashboard from './Components/Dashboard/Dashboard';
 import LoginView from './Components/LoginView/LoginView';

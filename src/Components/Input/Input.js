@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Input.sass';
 
-function Input({id, type, placeholder, hooksprop}) {
-// const [inputValue, setInputValue] = useState(value)
+function Input({id, type, placeholder, register, label}) {
 
   return (
     <>
-      <input {...{ id, type, placeholder, hooksprop}}></input>
+      <input {...{ id, type, placeholder, ...register(label)}} />
     </>
   );
 }

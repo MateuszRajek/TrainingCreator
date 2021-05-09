@@ -13,9 +13,10 @@
 
     .registration__container__form
         @include flex(column)
+        width: 320px
         padding: 15px
-        margin: 20px
-        border-radius: 20px
+        margin-top: 20px
+        border-radius: 20px 20px 0 0
         background-color: $white
 
         .registration__form__title
@@ -34,3 +35,18 @@
             font-size: 12px
             font-weight: 300
             letter-spacing: 2px
+
+    .registration__form__buttons
+        @include flex(row)
+        justify-content: space-around
+
+    .registration__form__login
+        @include flex-center(column)
+        width: 320px
+        padding: 15px
+        margin-bottom: 20px
+        border-radius: 0 0 20px 20px
+        background-color: $bgc-color
+
+        p 
+            margin-top: 0

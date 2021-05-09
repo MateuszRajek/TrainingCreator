@@ -1,3 +1,4 @@
+import React from 'react';
 import Calendar from './Calendar/Calendar';
 import Chat from './Chat/Chat';
 import './Dashboard.sass';

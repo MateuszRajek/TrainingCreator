@@ -1,0 +1,26 @@
+@import '../../../sass/variables'
+@import '../../../sass/mixins'
+.main
+    padding: 15px
+    background-color: $bgc-color
+    
+    .container
+        margin: 0 auto
+        display: grid
+        grid-gap: 15px
+        border-radius: 20px
+    .top 
+        grid-template-columns: 1fr
+        @media (min-width: $breakpoint-medium)
+            grid-template-columns: 1fr 2fr
+        margin-bottom: 15px
+    .center
+        grid-template-columns: 1fr
+        @media (min-width: $breakpoint-medium)
+            grid-template-columns: 2fr 1fr
+
+
+
+
+
+    

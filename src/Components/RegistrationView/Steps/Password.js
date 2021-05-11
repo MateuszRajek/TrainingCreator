@@ -14,7 +14,7 @@ function Password({ onSubmit }) {
         <h1 className='registration__form__title'>Create an account</h1>
         <Input 
           className='registration__form__input' 
-          register={register} 
+          register={register('userName', {minLength: {value: 2, message: 'errorMessage'}})} 
           type='text' 
           text='User Name' 
           id='userName' 
@@ -22,7 +22,7 @@ function Password({ onSubmit }) {
         />
         <Input 
           className='registration__form__input' 
-          register={register} 
+          register={register('password', {minLength: {value: 2, message: 'errorMessage'}})} 
           type='password' 
           text='Password' 
           id='password' 
@@ -31,7 +31,7 @@ function Password({ onSubmit }) {
         />
         <Input 
           className='registration__form__input' 
-          register={register} 
+          register={register('passwordRep', {minLength: {value: 2, message: 'errorMessage'}})} 
           type='password' 
           text='Repeat Password' 
           id='passwordRep' 

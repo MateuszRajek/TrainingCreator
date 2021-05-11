@@ -14,27 +14,27 @@ function Password({ onSubmit }) {
         <h1 className='registration__form__title'>Create an account</h1>
         <Input 
           className='registration__form__input' 
-          register={register('userName', {minLength: {value: 2, message: 'errorMessage'}})} 
-          type='text' 
+          register={register('userName', {minLength: 2})}  
           text='User Name' 
           id='userName' 
+          type='text'
           icon={person} 
         />
         <Input 
           className='registration__form__input' 
-          register={register('password', {minLength: {value: 2, message: 'errorMessage'}})} 
-          type='password' 
+          register={register('password', {minLength: 2})}  
           text='Password' 
           id='password' 
+          type='password'
           icon={lock} 
           autocomplete='new-password' 
         />
         <Input 
           className='registration__form__input' 
-          register={register('passwordRep', {minLength: {value: 2, message: 'errorMessage'}})} 
-          type='password' 
+          register={register('passwordRep', {minLength: {value: 2}})} 
           text='Repeat Password' 
           id='passwordRep' 
+          type='password' 
           icon={lock} 
           autocomplete='new-password' 
         />

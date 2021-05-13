@@ -20,7 +20,6 @@ const onSubmit = data => {
 
   setRegData(formData)
   changeStep()
-console.log(formData)
 }
 
   return (

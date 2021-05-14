@@ -1,4 +1,4 @@
-import './Chat.sass';
+import './_Chat.sass';
 
 function Chat() {
   return (

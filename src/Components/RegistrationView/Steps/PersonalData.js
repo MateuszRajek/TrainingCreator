@@ -6,7 +6,7 @@ import Input from '../../Input/Input';
 import { useForm } from 'react-hook-form';
 import Button from '../../Button/Button';
 
-function PersonalData({ onSubmit }) {
+function PersonalData({ onSubmit, formData }) {
   const { register, handleSubmit, formState: { errors } } = useForm()
 
   return (
@@ -20,6 +20,7 @@ function PersonalData({ onSubmit }) {
           id='firstName' 
           type='text'
           icon={person} 
+          value={formData.firstName}
         />
         {errors.firstName && errors.firstName.type === 'required' && 
         <p className='registration__form__error-message'>First Name is required</p>}
@@ -34,6 +35,7 @@ function PersonalData({ onSubmit }) {
           id='lastName' 
           type='text'
           icon={person} 
+          value={formData.lastName}
         />
         {errors.lastName && errors.lastName.type === 'required' && 
         <p className='registration__form__error-message'>Last Name is required</p>}
@@ -48,6 +50,7 @@ function PersonalData({ onSubmit }) {
           id='email' 
           type='email' 
           icon={email} 
+          value={formData.email}
         />
         {errors.email && errors.email.type === 'required' && 
         <p className='registration__form__error-message'>Email is required</p>}
@@ -60,6 +63,7 @@ function PersonalData({ onSubmit }) {
           id='phone' 
           type='phone'
           icon={phone} 
+          value={formData.phone}
         />
         {errors.phone && errors.phone.type === 'required' && 
         <p className='registration__form__error-message'>Phone number is required</p>}

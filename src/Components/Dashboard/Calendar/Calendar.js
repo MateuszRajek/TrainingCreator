@@ -1,5 +1,5 @@
 import React from 'react';
-import './Calendar.sass';
+import './_Calendar.sass';
 
 function Calendar() {
   return (

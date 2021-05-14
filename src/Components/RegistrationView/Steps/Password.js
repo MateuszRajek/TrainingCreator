@@ -5,7 +5,7 @@ import person from '../../../assets/person.png'
 import { useForm } from 'react-hook-form';
 import Button from '../../Button/Button';
 
-function Password({ onSubmit }) {
+function Password({ onSubmit, formData }) {
   const { register, handleSubmit, formState: { errors }, getValues } = useForm()
 
   return (
@@ -19,6 +19,7 @@ function Password({ onSubmit }) {
           id='userName' 
           type='text'
           icon={person} 
+          value={formData.userName}
         />
         {errors.userName && errors.userName.type === 'required' && 
         <p className='registration__form__error-message'>User Name is required</p>}
@@ -33,10 +34,11 @@ function Password({ onSubmit }) {
           type='password'
           icon={lock} 
           autocomplete='new-password' 
+          value={formData.password}
         />
-         {errors.userName && errors.userName.type === 'required' && 
+         {errors.password && errors.password.type === 'required' && 
         <p className='registration__form__error-message'>Password is required</p>}
-        {errors.userName && errors.userName.type === 'minLength' && 
+        {errors.password && errors.password.type === 'minLength' && 
         <p className='registration__form__error-message'>Password requires at least 8 characters</p>}
         {errors.password && errors.password.type === 'validate' && 
         <p className='registration__form__error-message'>Password must includes min 8 signs, at least one big letter and one number</p>}
@@ -54,12 +56,13 @@ function Password({ onSubmit }) {
           type='password' 
           icon={lock} 
           autocomplete='new-password' 
+          value={formData.passwordRep}
         />
-        {errors.userName && errors.userName.type === 'required' && 
+        {errors.passwordRep && errors.passwordRep.type === 'required' && 
         <p className='registration__form__error-message'>Password is required</p>}
-        {errors.userName && errors.userName.type === 'minLength' && 
+        {errors.passwordRep && errors.passwordRep.type === 'minLength' && 
         <p className='registration__form__error-message'>Password requires at least 8 characters</p>}
-        {errors.password && errors.password.type === 'validate' && 
+        {errors.passwordRep && errors.passwordRep.type === 'validate' && 
         <p className='registration__form__error-message'>Password does't match</p>}
         <div className='registration__form__buttons'>
           <Button text='Prev' size='small' color='aquamarine' />

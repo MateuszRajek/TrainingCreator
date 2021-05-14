@@ -1,5 +1,5 @@
 import React from 'react';
-import './TasksModal.sass';
+import './_TasksModal.sass';
 
 function TasksModal() {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import './LoginView.sass';
+import './_LoginView.sass';
 
 function LoginView() {
   return (

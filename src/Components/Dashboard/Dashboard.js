@@ -1,9 +1,9 @@
 import React from 'react';
 import Calendar from './Calendar/Calendar';
 import Chat from './Chat/Chat';
-import './Dashboard.sass';
 import Tasks from './Tasks/Tasks';
 import Trainings from './Trainings/Trainings';
+import './_Dashboard.sass';
 
 function Dashboard() {
   return (

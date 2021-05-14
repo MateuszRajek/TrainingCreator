@@ -1,4 +1,4 @@
-import './Trainings.sass';
+import './_Trainings.sass';
 
 function Trainings() {
   return (

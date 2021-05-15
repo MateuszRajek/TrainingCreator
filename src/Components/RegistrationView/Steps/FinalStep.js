@@ -11,12 +11,13 @@ function FinalStep({ goToLogin }) {
         return () => clearInterval(timer);
       };
     
-      useEffect(counterSetUp, [counter, goToLogin]);
+      // useEffect(counterSetUp, [counter, goToLogin]);
 
   return (
     <div className='registration__container__form registration__container__form--rounded'>
         <p>Your accout has been registered.</p> 
-        <p>Redirecting to Login <span className={'registration__container__form__counter'}>{counter}</span></p> 
+        <p>You will be automaticaly 
+          redirected to Login in: <span className={'registration__container__form__counter'}>{counter}</span></p> 
         <p>or</p>
         <Button text='Sign in' size='small' color='lightcollar' onClick={() => goToLogin()}/>
     </div>

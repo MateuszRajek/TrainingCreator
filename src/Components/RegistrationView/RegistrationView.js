@@ -10,18 +10,13 @@ import './_RegistrationView.sass';
 function RegistrationView() {
 const [registrationData, setRegData] = useState({})
 const [registrationStep, setRegStep] = useState(1)
-const errorMessage = 'This field is required'
 
 const nextStep = () => {
   registrationStep === 1 ? setRegStep(2) : setRegStep(3)
 }
 
-const prevStep = (data) => {
-  registrationStep === 2 ? setRegStep(1) : setRegStep(1)
-  let formData = registrationData
-  formData = {...formData, ...data}
-
-  setRegData(formData)
+const prevStep = () => {
+  if (registrationStep === 2) setRegStep(1)
 }
 
 const onSubmit = data => {
@@ -43,15 +38,13 @@ const goToLogin = () => {
     <section className='registration__container'>
         {registrationStep === 1 && 
           <PersonalData 
-            onSubmit={onSubmit} 
-            errorMessage={errorMessage} 
+            onSubmit={onSubmit}  
             formData={registrationData}
           />}
         {registrationStep === 2 && 
           <Password
             onClick={() => prevStep()}
             onSubmit={onSubmit}
-            errorMessage={errorMessage} 
             formData={registrationData}
           />}
         {registrationStep !== 3 && <div className='registration__form__login'>
@@ -60,7 +53,6 @@ const goToLogin = () => {
         </div>}
       {registrationStep === 3 && <FinalStep goToLogin={goToLogin}/>}
     </section>
-      
     </>
   );
 }

@@ -9,7 +9,7 @@ import './_RegistrationView.sass';
 
 function RegistrationView() {
 const [registrationData, setRegData] = useState({})
-const [registrationStep, setRegStep] = useState(3)
+const [registrationStep, setRegStep] = useState(1)
 const errorMessage = 'This field is required'
 
 const nextStep = () => {

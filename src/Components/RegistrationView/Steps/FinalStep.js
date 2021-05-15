@@ -11,7 +11,7 @@ function FinalStep({ goToLogin }) {
         return () => clearInterval(timer);
       };
     
-      // useEffect(counterSetUp, [counter, goToLogin]);
+      useEffect(counterSetUp, [counter, goToLogin]);
 
   return (
     <div className='registration__container__form registration__container__form--rounded'>

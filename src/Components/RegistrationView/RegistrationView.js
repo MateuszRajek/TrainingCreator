@@ -53,7 +53,6 @@ const goToLogin = () => {
         </div>}
       {registrationStep === 3 && <FinalStep goToLogin={goToLogin}/>}
     </section>
-      
     </>
   );
 }

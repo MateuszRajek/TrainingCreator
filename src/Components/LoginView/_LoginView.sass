@@ -1,0 +1,46 @@
+@import '../../../sass/variables'
+@import '../../../sass/mixins'
+
+.login__container
+    @include flex-center(column)
+    min-height: 100vh
+    background-image: url(../../assets/registration-background-rotated.jpg)
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    @media (min-width: $breakpoint-small)
+        background-image: url(../../assets/registration-background.jpg)
+
+    .login__container__form
+        @include flex(column)
+        width: 320px
+        padding: 15px
+        margin-top: 20px
+        border-radius: 20px
+        background-color: $white
+
+        .login__form__title
+            font-size: 25px
+
+            span
+                color: $steelblue
+
+        .login__form__input
+            width: 90%
+            padding-left: 10px
+            background-color: $bgc-color
+            font-size: 20px
+            line-height: 200%
+        ::placeholder
+            color: $white
+        label
+            margin-left: 15px
+            font-size: 12px
+            font-weight: 300
+            letter-spacing: 2px
+
+        .login__form__error-message
+            margin: -20px 0 0
+            color: $error
+            font-size: 12px
+            letter-spacing: 1px

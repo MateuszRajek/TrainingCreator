@@ -5,7 +5,7 @@ import person from '../../../assets/person.png'
 import { useForm } from 'react-hook-form';
 import Button from '../../Button/Button';
 
-function Password({ onSubmit, formData, callbackFn }) {
+function Password({ onSubmit, formData, onClick }) {
   const { register, handleSubmit, formState: { errors }, getValues } = useForm()
 
   return (
@@ -65,7 +65,7 @@ function Password({ onSubmit, formData, callbackFn }) {
         {errors.passwordRep && errors.passwordRep.type === 'validate' && 
         <p className='registration__form__error-message'>Password does't match</p>}
         <div className='registration__form__buttons'>
-          <Button text='Prev' size='small' type='button' color='aquamarine' callbackFn={callbackFn} />
+          <Button text='Prev' size='small' type='button' color='aquamarine' onClick={onClick} />
           <Button text='Register' size='medium' color='steelblue' />
         </div>
       </form>

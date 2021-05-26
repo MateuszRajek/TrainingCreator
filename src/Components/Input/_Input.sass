@@ -11,8 +11,12 @@
     .input
         height: 100%
 
-    .input__icon
+    .input__icon, .password-visibility__input__icon
         @include flex-center(row)
         height: 100%
         padding-left: 10px
         background-color: $bgc-color
+    
+    .password-visibility__input__icon
+        padding-right: 10px
+        

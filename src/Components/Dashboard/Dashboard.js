@@ -1,5 +1,5 @@
 import React from 'react';
-import Calendar from './Calendar/Calendar';
+import CalendarView from './Calendar/Calendar';
 import Chat from './Chat/Chat';
 import Tasks from './Tasks/Tasks';
 import Trainings from './Trainings/Trainings';
@@ -9,7 +9,7 @@ function Dashboard() {
   return (
     <section className='main'>
       <div className='container top'>
-        <Calendar />
+        <CalendarView />
         <Tasks />
       </div>
       <div className='container center'>

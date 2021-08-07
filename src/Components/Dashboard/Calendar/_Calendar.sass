@@ -1,4 +1,22 @@
 @import '../../../../sass/mixins'
+@import '../../../../sass/variables'
 
-.cal
-    @include dash-el-common(200px)
+.calendar__container
+    @include dash-el-common(auto)
+    padding: 20px
+
+    .react-calendar__month-view__weekdays__weekday
+    text-align: center
+
+    .react-calendar__tile--active 
+        border-radius: 5px 
+        background-color: $lightblue
+    
+    .react-calendar__month-view__days__day--weekend
+        color: $lightcollar
+    
+    .react-calendar__navigation__arrow
+        padding: 2px 10px
+        color: $steelblue
+        font-size: 28px
+    

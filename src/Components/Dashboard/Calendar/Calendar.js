@@ -5,7 +5,7 @@ import './_Calendar.sass';
 function CalendarView() {
   const [date, setDate] = useState(new Date())
   const [clickedDay, setClickedDay] = useState('')
-
+//basic version for design purpose only for now
   const onClickedDay = value => setClickedDay(value)
 
   useEffect(() => clickedDay && console.log(clickedDay), [clickedDay])

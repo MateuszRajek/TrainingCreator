@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './_Calendar.sass';
 
-const  CalendarView = () => {
+const  Calendar = () => {
   const [date, setDate] = useState(new Date())
   const [clickedDay, setClickedDay] = useState('')
 

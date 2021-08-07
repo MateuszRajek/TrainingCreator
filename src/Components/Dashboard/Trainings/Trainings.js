@@ -1,6 +1,6 @@
 import './_Trainings.sass';
 
-function Trainings() {
+const Trainings = () => {
   return (
     <div className='trainings'>
       <p>TRAINING CENTER PREVIEW</p>

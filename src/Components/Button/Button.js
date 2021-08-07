@@ -1,7 +1,7 @@
 import React from 'react';
 import './_Button.sass';
 
-function Button({ type, text, size, color, onClick }) {
+const Button = ({ type, text, size, color, onClick }) => {
 
   return (
     <>

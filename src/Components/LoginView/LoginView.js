@@ -6,7 +6,7 @@ import person from '../../assets/person.png'
 import { useForm } from 'react-hook-form';
 import './_LoginView.sass';
 
-function LoginView() {
+const LoginView = () => {
   const [LoginData, setLoginData] = useState({})
   const { register, handleSubmit, formState: { errors } } = useForm()
 

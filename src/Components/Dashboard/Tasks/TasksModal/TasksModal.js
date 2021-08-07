@@ -1,7 +1,7 @@
 import React from 'react';
 import './_TasksModal.sass';
 
-function TasksModal() {
+const TasksModal = () => {
   return (
    <>
    

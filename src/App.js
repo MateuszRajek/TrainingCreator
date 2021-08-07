@@ -6,7 +6,7 @@ import RegistrationView from './Components/RegistrationView/RegistrationView';
 import 'sass-reset';
 import './App.sass';
 
-function App() {
+const App = () => {
   return (
       <Router>
         <Switch>

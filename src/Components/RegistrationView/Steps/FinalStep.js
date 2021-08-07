@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Button from '../../Button/Button';
 
-function FinalStep({ goToLogin }) {
+const FinalStep = ({ goToLogin }) => {
     const [counter, setCounter] = useState(5);
 
     const counterSetUp = () => {

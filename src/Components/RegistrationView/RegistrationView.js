@@ -7,7 +7,7 @@ import PersonalData from './Steps/PersonalData';
 import './_RegistrationView.sass';
 
 
-function RegistrationView() {
+const RegistrationView = () => {
 const [registrationData, setRegData] = useState({})
 const [registrationStep, setRegStep] = useState(1)
 

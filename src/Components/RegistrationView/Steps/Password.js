@@ -5,7 +5,7 @@ import person from '../../../assets/person.png'
 import { useForm } from 'react-hook-form';
 import Button from '../../Button/Button';
 
-function Password({ onSubmit, formData, onClick }) {
+const Password = ({ onSubmit, formData, onClick }) => {
   const { register, handleSubmit, formState: { errors }, getValues } = useForm()
 
   return (

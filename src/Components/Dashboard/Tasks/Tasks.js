@@ -1,7 +1,7 @@
 import React from 'react';
 import './_Tasks.sass';
 
-function Tasks() {
+const Tasks = () => {
   return (
     <div className='tasks'>
       <p>TASKS LIST</p>

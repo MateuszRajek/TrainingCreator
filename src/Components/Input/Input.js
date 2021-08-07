@@ -3,7 +3,7 @@ import eye from '../../assets/eye.png';
 import eyeInvisible from '../../assets/eye-invisible.png';
 import './_Input.sass';
 
-function Input({ id, type, register, text, className, icon, autocomplete, value }) {
+const Input = ({ id, type, register, text, className, icon, autocomplete, value }) => {
   const [inputValue] = useState(value)
   const [isVisible, setVisibility] = useState(false)
   const [inputType, setInputType] = useState(type)

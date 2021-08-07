@@ -5,7 +5,7 @@ import Tasks from './Tasks/Tasks';
 import Trainings from './Trainings/Trainings';
 import './_Dashboard.sass';
 
-function Dashboard() {
+const Dashboard = () => {
   return (
     <section className='main'>
       <div className='container top'>

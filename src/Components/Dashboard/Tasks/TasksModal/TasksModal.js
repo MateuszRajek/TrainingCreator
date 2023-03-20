@@ -1,12 +1,8 @@
-import React from 'react';
-import './_TasksModal.sass';
+import React from "react";
 
 function TasksModal() {
-  return (
-   <>
-   
-   </>
-  );
+  return <></>;
 }
 
 export default TasksModal;
+

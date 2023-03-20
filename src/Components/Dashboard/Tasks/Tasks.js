@@ -1,12 +1,12 @@
-import React from 'react';
-import './_Tasks.sass';
+import React from "react";
 
 function Tasks() {
   return (
-    <div className='tasks'>
+    <div className="tasks">
       <p>TASKS LIST</p>
     </div>
   );
 }
 
 export default Tasks;
+

@@ -7,7 +7,9 @@ function CalendarView() {
   //basic version for design purpose only for now
   const onClickedDay = (value) => setClickedDay(value);
 
-  useEffect(() => clickedDay && console.log(clickedDay), [clickedDay]);
+  useEffect(() => {
+    console.log(clickedDay);
+  }, [clickedDay]);
   return (
     <div className="calendar__container">
       <Calendar value={date} onChange={setDate} onClickDay={onClickedDay} />

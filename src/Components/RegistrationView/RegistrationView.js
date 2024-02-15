@@ -4,6 +4,7 @@ import Button from "../Button/Button";
 import FinalStep from "./Steps/FinalStep";
 import Password from "./Steps/Password";
 import PersonalData from "./Steps/PersonalData";
+import { Link } from "react-router-dom";
 
 function RegistrationView() {
   const [registrationData, setRegData] = useState({});
@@ -39,7 +40,9 @@ function RegistrationView() {
         {registrationStep !== 3 && (
           <div className="registration__form__login">
             <p>Already have an account?</p>
-            <Button text="Sign in" size="small" color="lightcollar" onClick={() => goToLogin()} />
+            <Link to={"/login"} className="btn btn--small btn--lightcollar">
+              Login
+            </Link>
           </div>
         )}
         {registrationStep === 3 && <FinalStep goToLogin={goToLogin} />}

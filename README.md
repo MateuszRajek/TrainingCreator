@@ -13,20 +13,18 @@
 
 ## Main goal
 
-- Main goal of the app is the 'Training Centre' feature. 
+- Main goal of the app is the 'Training Centre' feature.
 
-    # Training Centre Functionalities:
+  # Training Centre Functionalities:
 
-    - Training pitch*
-    - List of coaches and their availability
-    - List of trainings planned
+  - Training pitch\*
+  - List of coaches and their availability
+  - List of trainings planned
 
-        * Training pitch is a board where a head coach can draw layout and training assumptions for subordinated coaches
-        - The following movable elements must be included:
-            - Goals
-            - Cones
-            - Player figure
-            
-            
-** (more functionalities will be provided soon after consultation with Mariusz Kukielka)
+    - Training pitch is a board where a head coach can draw layout and training assumptions for subordinated coaches
+
+    * The following movable elements must be included:
+      - Goals
+      - Cones
+      - Player figure
 

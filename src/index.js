@@ -3,15 +3,15 @@ import { createRoot } from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Dashboard from "./Components/Dashboard/Dashboard";
-import RegistrationView from "./Components/RegistrationView/RegistrationView";
-import LoginView from "./Components/LoginView/LoginView";
+import Dashboard from "./screens/Dashboard/Dashboard";
+import RegistrationView from "./screens/RegistrationView/RegistrationView";
+import LoginView from "./screens/LoginView/LoginView";
 
 const root = createRoot(document.getElementById("root"));
 
 const router = createBrowserRouter([
   {
-    path: "/dashboard",
+    path: "/",
     element: <Dashboard />,
   },
   {

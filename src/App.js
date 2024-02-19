@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Dashboard from "./Components/Dashboard/Dashboard";
-import LoginView from "./Components/LoginView/LoginView";
-import RegistrationView from "./Components/RegistrationView/RegistrationView";
+import Dashboard from "./screens/Dashboard/Dashboard";
+import LoginView from "./screens/LoginView/LoginView";
+import RegistrationView from "./screens/RegistrationView/RegistrationView";
 
 function App() {
   return (

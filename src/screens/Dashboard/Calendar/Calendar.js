@@ -8,7 +8,7 @@ function CalendarView() {
   const onClickedDay = (value) => setClickedDay(value);
 
   useEffect(() => {
-    console.log(clickedDay);
+    clickedDay && console.log(clickedDay);
   }, [clickedDay]);
   return (
     <div className="calendar__container">

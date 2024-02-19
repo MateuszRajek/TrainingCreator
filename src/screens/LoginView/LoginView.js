@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import Button from "../Button/Button";
-import Input from "../Input/Input";
+import Input from "../../components/Input/Input";
 import lock from "../../assets/lock.png";
 import person from "../../assets/person.png";
 import { useForm } from "react-hook-form";

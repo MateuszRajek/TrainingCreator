@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
-import Button from "../Button/Button";
 import FinalStep from "./Steps/FinalStep";
 import Password from "./Steps/Password";
 import PersonalData from "./Steps/PersonalData";
